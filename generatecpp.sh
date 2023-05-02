@@ -5,7 +5,6 @@ if [[ $# -eq 0 ]]; then
   exit 1
 fi
 
-hpp_file=$1
 if [[ ! -f "$hpp_file" ]]; then
   echo "Erro: o arquivo $hpp_file não existe."
   exit 1
