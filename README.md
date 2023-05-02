@@ -20,7 +20,7 @@ To use the script, run the following command in a terminal:
 where *<header-file>* is the name of the header file for which you want to create the source file.
 
 ### Examples
-Here are some examples of using the script:
+Here are an example of usage:
 
 ```
 ./header-to-source.sh MyClass.hpp
@@ -30,6 +30,20 @@ This will generate a source file named **MyClass.cpp** in the same directory as 
 
 ### Error Handling
 The script displays an error message and exits with a status code of 1 if no arguments are provided, if the specified header file does not exist, or if the specified source file already exists.
+
+### Alias
+To create an alias for the **generatecpp.sh** script, open your *.zshrc* or *.bashrc* file and add the following line:
+```
+aliasname="path/to/generatecpp.sh"
+```
+
+Make sure to replace **aliasname** with your desired alias and **path/to/generatecpp.sh** with the correct path to the script.
+
+Once the alias is set up, you can call the script from the command line using your chosen alias and the name of the header file:
+
+```
+aliasname MyClass.hpp
+```
 
 ### Contributing
 If you find a bug or want to contribute to the script, please create a pull request or file an issue on this repository
